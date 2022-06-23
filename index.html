@@ -12,7 +12,7 @@
 <link href="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
  <script type="text/javascript">
          $(function () {
-              function function_open() {
+             function myOpen(fileName) {
                  $("#dialog").dialog({
                      modal: true,
                      title: fileName,
@@ -33,19 +33,6 @@
                      }
                  });
              });
-          
-             $("#btnShow").click(function () {
-               var fileName = "carte-tapas-fr.pdf";
-              function_open();
-             }
-             $("#btnShow2").click(function () {
-              var fileName = "carte-tapas-es.pdf";
-              function_open();
-             }
-             $("#btnShow3").click(function () {
-              var fileName = "carte-tapas-en.pdf";
-              function_open();
-             }
          });
  </script>
 <title>Restaurant Rich-B</title>
@@ -70,17 +57,17 @@
        <h2 class="through-line">Carte Française</h2>
        <p>
          <a href="carte-tapas-fr.pdf">Carte des Tapas (FR)</a>
-          <input id="btnShow" type="button" value="Carte des Tapas (FR)" />
+          <input id="btnShow" type="button" value="Carte des Tapas (FR)" onclick="myOpen(carte-tapas-fr.pdf)"/>
        </p>
        <h2 class="through-line">Menú Espanol</h2>
        <p>
          <a href="carte-tapas-fr.pdf">Menú de tapas (ES)</a>
-          <input id="btnShow2" type="button" value="Menú de tapas (ES)" />
+          <input id="btnShow2" type="button" value="Menú de tapas (ES)" onclick="myOpen(carte-tapas-es.pdf)"/>
        </p>
        <h2 class="through-line">English Menu</h2>
        <p>
          <a href="carte-tapas-fr.pdf">Tapas menu (EN)</a>
-          <input id="btnShow3" type="button" value="Tapas menu (EN)" />
+          <input id="btnShow3" type="button" value="Tapas menu (EN)" onclick="myOpen(carte-tapas-en.pdf)"/>
        </p>
        <div id="dialog" style="display: none"></div>
     </div>
