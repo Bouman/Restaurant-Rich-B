@@ -83,7 +83,7 @@ h2.through-line::after {
 .banner {
   padding: 35px 0px;
   text-align: center;
-  background: #E1DCD2 url(./img/banner.jpg) no-repeat scroll center center / cover;
+  background: #E1DCD2 url(./img/banniere.jpg) no-repeat scroll center center / cover;
   /* min-width? */
 }
 
