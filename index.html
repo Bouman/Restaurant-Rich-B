@@ -33,17 +33,17 @@
        <h2 class="through-line">Carte Française</h2>
        <p>
          <a href="carte-tapas-fr.pdf">Carte des Tapas (FR)</a>
-          <button id="btnShow" type="button" onclick="myOpen(carte-tapas-fr.pdf)"/>Carte des Tapas (FR)</button>
+          <button id="btnShow" type="button" onclick="myOpen(fr)"/>Carte des Tapas (FR)</button>
        </p>
        <h2 class="through-line">Menú Espanol</h2>
        <p>
          <a href="carte-tapas-fr.pdf">Menú de tapas (ES)</a>
-          <button id="btnShow2" type="button" onclick="myOpen(carte-tapas-es.pdf)"/>Menú de tapas (ES)</button>
+          <button id="btnShow2" type="button" onclick="myOpen(es)"/>Menú de tapas (ES)</button>
        </p>
        <h2 class="through-line">English Menu</h2>
        <p>
          <a href="carte-tapas-fr.pdf">Tapas menu (EN)</a>
-          <button id="btnShow3" type="button" onclick="myOpen(carte-tapas-en.pdf)"/>Tapas menu (EN)</button>
+          <button id="btnShow3" type="button" onclick="myOpen(en)"/>Tapas menu (EN)</button>
        </p>
        <div id="dialog" style="display: none"></div>
     </div>
@@ -51,7 +51,15 @@
 </div>
 
 <script type="text/javascript">
-             function myOpen(fileName) {
+             function myOpen(langue) {
+              if (langue = FR) {
+                fileName = 'positive';
+              } elseif (langue = ES) {
+                fileName = 'positive';
+              } else {
+                fileName = 'positive';
+              }
+              carte-tapas-fr.pdf
                  $("#dialog").dialog({
                      modal: true,
                      title: fileName,
