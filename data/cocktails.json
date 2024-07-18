@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Mojito",
+        "ingredients": ["Rhum", "Menthe", "Sucre", "Citron vert", "Eau gazeuse"],
+        "price": "8.00€"
+    },
+    {
+        "name": "Margarita",
+        "ingredients": ["Tequila", "Triple sec", "Citron vert"],
+        "price": "10.00€"
+    }
+]
